@@ -93,7 +93,7 @@
                   <label class="onlctrl_label label_cls">Name <br /><input class="onlctrl_in input_cls" type="text" placeholder="What is your name:"></label>
                   <label class="onlctrl_label label_cls">Phone<br /><input class="onlctrl_in input_cls" type="tel" placeholder="Your phone number:"></label>
                   <button class="onlctrl_but cls_but" type="submit">Submit</button>
-                  <label class="onlctrl_labelcheck cls_labelcheck"><input class="onlctrl_checkbox cls_checkbox" type="checkbox"><span class="onlnctrl_checkimg cls_checkimg"></span><span class="onlctrl_checktext cls_checktext">I agree to the processing of personal data</span></label>
+                  <label class="onlctrl_labelcheck cls_labelcheck"><input class="onlctrl_checkbox cls_checkbox" type="checkbox" checked><span class="onlnctrl_checkimg cls_checkimg"></span><span class="onlctrl_checktext cls_checktext">I agree to the processing of personal data</span></label>
               </form>
             </div>
           </div>
@@ -192,30 +192,11 @@
               <div class="measure_right">
                 <form action="" class="measure_form">
                   <p>Leave a request for free departure of the measurer</p>
-                  <fieldset class="measure_form_fieldset">
-                    <legend>Name</legend>
-                    <!-- <label>What is your name:<input type="text" class="measure_form_input" required></label> -->
-                    <input class="measure_form_input" type="text" name="measure_form_name" id="measure_form_name" required>
-                    <label for="measure_form_name">What is your name:</label>
-                  </fieldset>
-                <fieldset class="measure_form_fieldset">
-                    <legend>Phone </legend>
-                    <!-- <label>Your phone number:<input type="tel" class="measure_form_input"  maxlength="11"></label> -->
-                    <input class="measure_form_input" type="tel" maxlength="11" id="measure_form_phone" required>
-                    <label for="measure_form_phone">Your phone number:</label>
-                </fieldset>
-                <fieldset class="measure_form_fieldset">
-                    <legend>Email</legend>
-                    <!-- <label>Your email:<input type="email" class="measure_form_input"></label> -->
-                    <input class="measure_form_input" type="email" id="measure_form_mail" required>
-                    <label for="measure_form_mail">Your email:</label>
-                </fieldset>
-                  <label class="measure_form_checklabel">
-                    <input type="checkbox" class="measure_form_checkbox">
-                    <span class="measure_form_check"></span>
-                    <span class="measure_form_checktext"> I agree to the processing of personal data</span>
-                  </label>
-                  <button type="submit" class="measurer_form_but">Call the measurer</button>
+                  <label class="measure_label label_cls">Name <br /><input class="measure_in input_cls" type="text" placeholder="What is your name:"></label>
+                  <label class="measure_label label_cls">Phone<br /><input class="measure_in input_cls" type="tel" pattern="[0-9]{,11}" placeholder="Your phone number:"></label>
+                  <label class="measure_label label_cls">Email<br /><input class="measure_in input_cls" type="email" placeholder="Your email:"></label>
+                  <label class="measure_labelcheck cls_labelcheck"> <input class="measure_checkbox cls_checkbox" type="checkbox" checked><span class="measure_checkimg cls_checkimg"></span><span class="measure_checktext cls_checktext">I agree to the processing of personal data</span></label>
+                  <button type="submit" class="measurer_form_but cls_but">Call the measurer</button>
                 </form>
                 <div class="measure_piggybank_box">
                   <div class="measure_piggybank_circle">

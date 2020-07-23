@@ -66,14 +66,21 @@ body a{
 .input_cls:-ms-input-placeholder { font-family: Nunito Sans;font-style: normal;font-weight: normal; opacity: 1;}
 .input_cls::placeholder { font-family: Nunito Sans;font-style: normal;font-weight: normal; opacity: 1;}
 
+/*RedOutline Firefox*/
+.input_cls:invalid{
+  outline: none;
+  box-shadow: none;
+  color: coral;
+}
+
 .label_cls{
   font-size: 0.8125rem;
   /*underline*/
   background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 80%;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 100% 1px; 
-  padding-bottom: -0.5rem;          /*8px*/
+  padding-bottom: 0.9rem;         /*8px*/
 }
 .label_cls:hover{
   background-size: 100% 1px;
@@ -82,9 +89,6 @@ body a{
 }
 .cls_labelcheck{
   cursor: pointer;
-  display: block;
-  text-align: center;
-  margin-bottom: 3.15625rem; /*50.5*/
   font-size: 0.875rem; 
 }
 .cls_checkbox{
@@ -466,11 +470,7 @@ a.prjct_loc_item:hover{
   flex-basis: 33%;
   color: rgba(54, 54, 54, 0.5);
 }
-.onlctrl_label + .onlctrl_label{
-  /* margin-left: 3.625rem; */
-}
 .onlctrl_in{
-  /* color: #363636; */
   color: #000000;
 }
 /*don't work with IE/edge*/
@@ -479,7 +479,6 @@ a.prjct_loc_item:hover{
 .onlctrl_in:-moz-placeholder { color: #363636; opacity: 1;}
 .onlctrl_in:-ms-input-placeholder { color: #363636; opacity: 1;}
 .onlctrl_in::placeholder { color: #363636; opacity: 1;}
-
 
 .onlctrl_but{
   font-size: 0.8125rem;               /*13px*/
@@ -594,137 +593,49 @@ a.prjct_loc_item:hover{
 }
 
 .measure_right{
-  width: 506px;
-  height: 509px;
+  width: 31.625rem;         /*506px*/
+  /*height: 31.8125rem;*/   /*509px*/
   color: #ffffff;
-  background-color: #000000;
   box-sizing: border-box;
   margin-right: 6.25rem;
   margin-top: 0.5rem;
+  
 }
 .measure_form{
   display: flex;
-  flex-flow: column nowrap;
-  padding: 2em 3em;
+  flex-flow: column wrap;
+  padding: 2rem 3rem;
+  background-color: #000000;
+
 }
 .measure_form p{
-  max-width: 250px;
+  max-width: 13.889rem;       /*250px*/
   text-align: center;
   margin: auto;
   margin-bottom: 2.1666em;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-size: 1.125rem;            /*18px*/
 }
-.measure_form_fieldset{
-  border: none;
-  border-bottom: solid;
-  border-width: 1px;
-  border-color: rgba(255, 255, 255, 0.15);
-  max-width: 400px;
+.measure_label + .measure_label{
+  margin-top: 3.692em;           /*48px*/
 }
-.measure_form_fieldset + .measure_form_fieldset{
-  margin-top: 3em;
-}
-.measure_form legend{
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
+.measure_label{
   color: rgba(255, 255, 255, 0.5);
 }
-.measure_form_fieldset label{
-  float: left;
+.measure_in{
+  color: #ffffff;
 }
-.measure_form_input{
-  color: #FFFFFF;
-  background-color: #000000;
-  border: none;
-  padding-bottom: 0.5em;
-  font-family: Nunito Sans;
-  font-size: 16px;
-  color: #FFFFFF;
-  background-color: #000000;
-  border: none;
-  margin-left: 10px;
-}
- .measure_form_input:focus + label {
-  color: #E3B873;
-}
-.measure_form_input:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-/*RedOutline Firefox*/
-.measure_form_input:invalid{
-  outline: none;
-  box-shadow: none;
-  color: coral;
-}
-
-.measure_form_checklabel{
-  display: block;
-  margin-bottom: 0.5em;
-  padding-left: 1.2em;
-  margin: 1.15em 0 2.8em 0;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px; 
-}
-.measure_form_checkbox{
-  position: absolute;
-  -webkit-appearance: none;
-  z-index: -1;
-}
-.measure_form_check{
-  position: absolute;
-  margin-left: -1em;
-  width: 1.3em;
-  height: 1.3em;
-  overflow: hidden;
-  border-radius: 1px;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-} 
-.measure_form_checktext{
-  margin-left: 15px;
-}
-.measure_form_checkbox:checked  + .measure_form_check{
-  background-color: #E3B873;
-  background-image: url(../img/checked.svg);
-}
-
-/* Focused */
-
-.measure_form_checkbox:focus + .measure_form_check {
-  box-shadow:
-      0 0 0 0.1em #E3B873,
-      0 0 0 0.2em #808080;
+.measure_labelcheck{
+  margin: 1.143em 0 2.786em 1em;    /*39*/
 }
 .measurer_form_but{
-  position: relative;
-  left: 47%;
-  width: 50%;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 1.2em 1.4em;
-  background-color: #E3B873;
-  border: solid 1px transparent;
+  align-self: flex-end;
+  width: 52%;
+  font-size: 0.8125rem;            /*13px*/
+  padding: 1.2em 0;
 }
-.measurer_form_but:hover{
-  cursor: pointer;
-}
-.measurer_form_but:focus{
-  box-shadow: inset 0px 0px 159px -100px #6B6255;
-}
+
+
+
 .measure_piggybank_box{
   display: flex;
   align-items: center;
