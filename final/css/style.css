@@ -956,7 +956,7 @@ a.prjct_loc_item:hover{
     padding: 0 1.125rem
   }
   .content{
-    max-width: 100%;/*21.25rem;*/   /*340px*/
+    max-width: 21.25rem;   /*340px*/
     margin: 0 auto;
     padding: 0;
   }
@@ -1065,7 +1065,7 @@ a.prjct_loc_item:hover{
     left: 85%;
   }
   .hidd_but img{
-    width: 6.2px;
+    width:  6.2px;
     height: 11px;
     padding: 30% 0 0 0;
   }
