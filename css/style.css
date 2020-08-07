@@ -1067,7 +1067,7 @@ a.prjct_loc_item:hover{
   .hidd_but img{
     width: 6.2px;
     height: 11px;
-    padding: 30% 0 0 0;
+    padding: 11px 0 0 0;/*30% 0 0 0;*/
   }
   .prjct_prop_item{
     width: 50%;
