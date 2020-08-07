@@ -956,7 +956,7 @@ a.prjct_loc_item:hover{
     padding: 0 1.125rem
   }
   .content{
-    max-width: 100%;/*21.25rem;*/   /*340px*/
+    max-width: 21.25rem;    /*21.25rem;*/   /*340px*/
     margin: 0 auto;
     padding: 0;
   }
